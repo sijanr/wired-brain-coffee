@@ -6,7 +6,8 @@ jobs:
       - image: circleci/ruby:2.4.1-node-browsers
     
     steps:
-      -run:
+      - checkout
+      - run:
         name: build dependencies
         command: bundle install
       - run:
@@ -15,4 +16,3 @@ jobs:
       - run:
           name: Show current date
           command: date
-
