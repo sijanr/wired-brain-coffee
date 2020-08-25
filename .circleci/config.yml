@@ -8,11 +8,8 @@ jobs:
     steps:
       - checkout
       - run:
-        name: build dependencies
-        command: bundle install
-      - run:
-          name: build the jekyll site
-          command: bundle exec jekyll build          
+          name: Greeting
+          command: echo hello world          
       - run:
           name: Show current date
           command: date
